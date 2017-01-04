@@ -6,5 +6,5 @@ public class Candidate {
 	public float numberOfResume;
 	public Date dayApplyRecruit;
 	
-	public String bls;
+	public String blss;
 }
