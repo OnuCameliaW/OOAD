@@ -4,12 +4,9 @@ public class Main {
 
 	 public static void main(String[] args) {
 		//singleton
-		HrManager hrManager= HrManager.getInstance();
-		
+		HrManager hrManager= HrManager.getInstance(); 
 		//prototype
 		Factory.Iterate();
-	}
-	
-
-	
+		
+	}		
 }

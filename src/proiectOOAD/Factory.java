@@ -1,5 +1,6 @@
 package proiectOOAD;
 
+import java.lang.reflect.Field;
 import java.util.*;
 
 import proiectOOAD.FactoryPrototype.Clone;
@@ -11,18 +12,20 @@ class Factory  {
       return ((Clone)prototypes.get(s)).cloan();
     }
     public static void Iterate(){ 
+    	FactoryPrototype basePrototype=new FactoryPrototype();
+    	System.out.println("The prototypes for the tests in Factory");
     	 prototypes.put( "technical",   new TechnicalTest() );
-         prototypes.put( "practical",  new PracticalTest() );
-         prototypes.put( "personality", new PersonalityTest() );
-         
+         prototypes.put( "personality", new PersonalityTest() );         
+         prototypes.put( "practical", new PracticalTest(basePrototype) );  
+
     	 Iterator it = prototypes.entrySet().iterator();
     	    while (it.hasNext()) {
     	        Map.Entry pair = (Map.Entry)it.next();   	     
-    	       // System.out.println(pair.getKey() + " = " + pair.getValue());
     	        System.out.println( Factory.makeObject( pair.getKey().toString() ));
     	        it.remove(); // avoids a ConcurrentModificationException
     	    }
-    	    
+            System.out.println("");     
+ 
     
     }
     
