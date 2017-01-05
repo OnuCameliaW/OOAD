@@ -10,10 +10,12 @@ public class HrManager {
 	private HrManager() {}
 	
 	public static HrManager getInstance() {
+		System.out.println("Singleton in HrManager");
 		System.out.println("One HRManager");
 		 if(hrManager == null) {
 			 hrManager = new HrManager();
 	      }
+		System.out.println("");
 		return hrManager;			
 	}	
 }
