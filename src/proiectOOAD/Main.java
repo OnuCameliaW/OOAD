@@ -27,7 +27,7 @@ public class Main {
 		   // Builder ( create test)
 		                // Get a TestBuilder of type OldTestBuilder
 		  TestBuilder techTest = new OldTestBuilder();
-		               // Pass the OldRobotBuilder specification to the engineer
+		               // Pass the OldTestBuilder specification to the teacher
 		  TestTeacherCreate testTeacher = new TestTeacherCreate(techTest);
 		               // Tell the teacher to create a test using the specifications
 		  				// of the OldTestBuilder class
