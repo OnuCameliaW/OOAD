@@ -1,8 +1,34 @@
 package proiectOOAD;
 
-public class Test {
-	public int testId;
-	public String testName;
-	public String testDescription;
+
+//The concrete Test class based on the testPlan interface
+
+public class Test implements TestPlan{
+	private int testId;
+	private String testName;
+	private String testDescription;
+	private TypeCategory testType;
+	
+	
+	public void setTestId(int id) {	
+		testId = id;	}
+    public int getTestId(){ return testId; }
+	
+	
+	public void setTestName(String name) {
+		testName = name;	}
+	public String getTestName(){ return testName; }
+	
+	
+	public void setTestDescription(String description) {
+		 testDescription = description;   }
+	public String getTestDescription(){ return testDescription; }
+	
+	
+	public void setTestType(TypeCategory type) {
+		 testType = type;	}
+	public TypeCategory getTestType(){ return testType; }
+	
+	
 	
 }
