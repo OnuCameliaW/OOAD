@@ -71,9 +71,18 @@ public class Main {
 		   System.out.println("Inceput Template Design Pattern");
 		   System.out.println();
 		   TemplateDemo t=new TemplateDemo();
- 
+     
+		   System.out.println("-----------------------------");
+		   System.out.println("Decorator Design Pattern");
 
+	   // Decorator Pattern  ( increase the standard question to medium and adanced by add/ "decorate" questions) 
+	       // The Questions object is sent to the QustionsMediumJava constructor
+	        // and then to the QustionsAdvancedJava constructor
+ QuestionsDecoratorInterface basicQuestion =  new QuestionsAdvancedJava(new QuestionsMediumJava(new Questions()));
+               System.out.println("Question is incresed with: " + basicQuestion.getDescription());
+               System.out.println("Points for question: " + basicQuestion.getPoints());
 
+           System.out.println("-----------------------------");        
 		  
 		
 	}
