@@ -48,8 +48,7 @@ public class Main {
 		      } 
 		  
 		  System.out.println();
-		  
-		  
+
 		   // Builder ( create test)
 		                // Get a TestBuilder of type OldTestBuilder
 		  TestBuilder techTest = new OldTestBuilder();
@@ -68,7 +67,10 @@ public class Main {
 		   System.out.println("Test Type: " + firstTest.getTestType());
 		   System.out.println("Test ID: " + firstTest.getTestId());
 
-
+		   System.out.println("-------");
+		   System.out.println("Inceput Template Design Pattern");
+		   System.out.println();
+		   TemplateDemo t=new TemplateDemo();
  
 
 

@@ -1,7 +1,7 @@
 package proiectOOAD;
 import java.sql.Date;
 
-public class Candidate extends Person implements Visitable{
+public  class Candidate extends Person implements Visitable{
 	public Integer numberOfResume;
 	public Date dayApplyRecruit;
 	private double points;
