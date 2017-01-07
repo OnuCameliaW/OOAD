@@ -1,8 +1,6 @@
 package proiectOOAD;
 import java.text.DecimalFormat;
 
-
-
 public class InfoVisitor implements Visitor {
 	DecimalFormat df = new DecimalFormat("#.##");
 	// Concrete Visitor Class
@@ -18,8 +16,9 @@ public class InfoVisitor implements Visitor {
 
 	// Show info when employee
 	public double visit(Employees EmployeeInfo) {
-    System.out.println("Candidate Info: Points ");          //bani in plus pentru angajat
-	 return Double.parseDouble(df.format((EmployeeInfo.getPoints() * 0.1)));
+    System.out.println("Employee Info: Points "); 
+    System.out.println(EmployeeInfo.getPoints()); 
+    return EmployeeInfo.getPoints() * 0.1; //bani in plus pentru angajat
 	}
 
 	
