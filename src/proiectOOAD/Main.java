@@ -87,6 +87,10 @@ public class Main {
            System.out.println("Criteria Design Pattern");
            CriteriaDemo c=new CriteriaDemo();
 		  
+           System.out.println("-----------------------------");   
+           
+           System.out.println("FlyWeight Design Pattern");
+           FlyWeightDemo f=new FlyWeightDemo();
 		
 	}
 	     
