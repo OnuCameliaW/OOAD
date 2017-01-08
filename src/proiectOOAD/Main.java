@@ -82,7 +82,10 @@ public class Main {
                System.out.println("Question is incresed with: " + basicQuestion.getDescription());
                System.out.println("Points for question: " + basicQuestion.getPoints());
 
-           System.out.println("-----------------------------");        
+           System.out.println("-----------------------------");   
+           
+           System.out.println("Criteria Design Pattern");
+           CriteriaDemo c=new CriteriaDemo();
 		  
 		
 	}
