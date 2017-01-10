@@ -19,8 +19,5 @@ public class InfoVisitor implements Visitor {
     System.out.println("Employee Info: Points "); 
     System.out.println(EmployeeInfo.getPoints()); 
     return EmployeeInfo.getPoints() * 0.1; //bani in plus pentru angajat
-	}
-
-	
-	
+	}	
 }

@@ -25,8 +25,6 @@ class Factory  {
     	        it.remove(); // avoids a ConcurrentModificationException
     	    }
             System.out.println("");     
- 
-    
     }
     
   }

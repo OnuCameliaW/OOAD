@@ -19,14 +19,4 @@ public class Employees extends Person implements Visitable{
 		super(firstName, lastName);
 		this.points = points;
 	}
-
-	
-	
-	
-	
-
-	
-   
-	
-	
 }
