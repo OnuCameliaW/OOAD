@@ -12,8 +12,7 @@ public class BuilderDemo {
 	// The teacher/technical teacher )) returns the right test based off of the specs
 	   // sent to it on line 28
 	   Test firstTest = techTest.getTest();
-	   System.out.println("-------");
-	   System.out.println("this is builder pattern");
+	   System.out.println("This is builder pattern");
 	   System.out.println("Test Name: " + firstTest.getTestName());
 	   System.out.println("Test Description: " + firstTest.getTestDescription());
 	   System.out.println("Test Type: " + firstTest.getTestType());

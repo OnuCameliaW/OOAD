@@ -5,8 +5,8 @@ public class QuestionsMediumJava extends QuestionsVariantDecorator{
 	 public QuestionsMediumJava(QuestionsDecoratorInterface newQuestions) {
 			super(newQuestions);
 	 
-		System.out.println(" create simple questions");
-		System.out.println(" increase level of question to medium");
+		System.out.println("Create simple questions");
+		System.out.println("Increase level of question to medium");
 	 }	
 		// Returns the result of calling getDescription() for
 		// Questions and add /increase to " medium /part of question " to it

@@ -21,7 +21,5 @@ public class FlyWeightDemo {
 		else if(i%4==3)
 			return TypeCategory.JobOffer;
 		return TypeCategory.JobOffer;
-	   }
-     
-      
+	   }   
 }

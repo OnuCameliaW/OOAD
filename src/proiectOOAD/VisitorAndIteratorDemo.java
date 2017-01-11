@@ -6,11 +6,12 @@ import java.util.List;
 public class VisitorAndIteratorDemo {
 	public VisitorAndIteratorDemo(){
 		 InfoVisitor InfoPoints = new InfoVisitor();		  
-		  System.out.println("-------");
-		  System.out.println("This is visitor pattern");
 		  
 		  IteratorRepository repository = new IteratorRepository();
 		  //Iterate throughout the list of Candidates
+		  System.out.println();
+		  System.out.println("---> Here we visit every Candidate in Candidate List");
+		  System.out.println();
 		  	 List<Candidate> candidatesForIterator=new ArrayList<Candidate>();
 			 Candidate c1 = new Candidate("Candidate1", "C1", 8.00);
 			 Candidate c2 = new Candidate("Candidate2", "C2", 6.00);
@@ -25,6 +26,9 @@ public class VisitorAndIteratorDemo {
 	   		      + c.accept(InfoPoints) +" puncte");
 	      } 	 
 	      //Iterate throughout the list of Employees
+	      System.out.println();
+	      System.out.println("---> Here we visit every Employee in Employee List");
+		  System.out.println();
 		 List<Employees> employeesForIterator=new ArrayList<Employees>();
 		 Employees e1 = new Employees("Employee1", "E1", 8.00);
 		 Employees e2 = new Employees("Employee2", "E2", 6.00);
